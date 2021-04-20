@@ -35,13 +35,27 @@ public class BoardService {
 					String Contents=scan.next();
 					text.get(i).setTexttitle(Texttitle);
 					text.get(i).setContents(Contents);{
-						
+					System.out.println(text.get(i));
 					}
 				}
 			}
 		}return text;
 	}
+	List<BoardDTO>Delete(List<BoardDTO>text){
+		System.out.print("글번호를 입력하세요:");
+		int BoardNumber=scan.nextInt();
+		System.out.print("비밀번호를 입력하세요:");
+		String PW=scan.next();
+		for(int i=0; i<text.size(); i++) {
+		if(BoardNumber==(text.get(i).getBoardNumber())) {
+			if(PW.equals(text.get(i).getPW())) {
+				text.remove(i);
+			
+					
+				}
+			}
+		}return text;
+	}
 	
-	
-	
-}
+	}
+

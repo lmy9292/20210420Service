@@ -1,12 +1,12 @@
 package day20_pkg;
 
 public class BoardDTO {
-	
+	private int BoardNumber;
 	private String Texttitle;
 	private String PW;
 	private String Name;
 	private String Contents;
-	private int BoardNumber;
+	
 	
 	BoardDTO(){
 		
@@ -63,9 +63,11 @@ public class BoardDTO {
 
 	@Override
 	public String toString() {
-		return "BoardDTO [Texttitle=" + Texttitle + ", PW=" + PW + ", Name=" + Name + ", Contents=" + Contents
-				+ ", BoardNumber=" + BoardNumber + "]";
+		return "BoardDTO [BoardNumber=" + BoardNumber + ", Texttitle=" + Texttitle + ", PW=" + PW + ", Name=" + Name
+				+ ", Contents=" + Contents + "]";
 	}
+
+	
 	
 	
 }

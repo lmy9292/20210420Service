@@ -48,7 +48,7 @@ public class BoardMain {
 			text=bo.Modify(text);
 			break;
 		case 5:
-		
+			text=bo.Delete(text);
 			break;
 		case 6:
 			
