@@ -18,10 +18,8 @@ public class BoardMain {
 			System.out.println("----------------------------------------------------");
 			System.out.print("선택 >");
 			int select =scan.nextInt();
-			
 		switch(select) {
 		case 1:
-			List=new BoardDTO();
 			int BoardNumber=text.size()+1;
 			System.out.print("제목을 입력하세요:");
 			String Texttitle=scan.next();
@@ -37,7 +35,8 @@ public class BoardMain {
 			List.setName(Name);
 			List.setContents(Contents);
 			text.add(List);
-			break;
+			break;	
+		
 		case 2:
 			bo.text(text);
 			break;
@@ -58,6 +57,7 @@ public class BoardMain {
 		}
 		}	
 			
+		
 		
 	}
 
